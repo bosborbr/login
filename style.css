@@ -1,15 +1,21 @@
 body {
+  background-image: linear-gradient(aqua, blue, darkblue);
   margin: 0;
   min-height: 100vh;
-
+  color: aliceblue;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+
 form {
+  background-image: linear-gradient( darkblue, black);
   display: flex;
   flex-flow: column;
+  border-radius: 1em;
+  border: 3px solid rgb(10, 43, 40);
+  box-shadow: 10px 10px  rgb(17, 17, 59);
 }
 
 input,
@@ -18,7 +24,33 @@ a {
   outline: none;
 }
 
+
 form .linha {
+  padding: 2px;
+  margin: 3px;
   display: flex;
-  flex-flow: row; /* column = form vertical, row = form horizontal */
+  flex-flow: column;
+}
+
+#login{
+font-size: 3em;
+text-decoration: underline;
+font-weight: bold;
+text-align: center;
+letter-spacing: 2px;
+text-shadow: 2px 2px blue;
+}
+
+a {
+  color: aliceblue;
+  text-align: center;
+}
+
+
+button {
+  background-color: #202c6d;
+  color: aliceblue;
+  padding: 2px 5px;
+  cursor: pointer;
+  height: 2.5em;
 }
